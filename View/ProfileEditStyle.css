@@ -1,0 +1,26 @@
+.main-edit-profile {
+    margin: 5% 25%;
+}
+
+.profile-img {
+    /* Scale the image so it covers whole area, thus will likely crop */
+    object-fit: cover !important;
+    /* Center the image within the element */
+    object-position: center !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    height: 300px !important;
+    width: 300px !important;
+}
+
+a:link.btn-delete-account {
+    color: red !important;
+}
+
+a:visited.btn-delete-account {
+    color: red !important;
+}
+
+.form-label {
+    font-weight: bold;
+}
