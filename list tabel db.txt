@@ -1,4 +1,4 @@
-Users {
+users {
     id
     first_name
     last_name
@@ -8,11 +8,29 @@ Users {
     email
     phone_number
     gender
+    role
 }
 
-Articles {
+create_article {
     id
     title
     img_url
     body
 }
+
+Domain Information
+Domain : onlinereaderkdpaw21.iceiy.com
+Domain Status : CREATING (Domain name might take some time to get activated)
+Username : icei_30090534
+Password : kelompokd123
+Main Domain : nbuw0cq2.iceiy.com
+Website Ip Address : 199.59.242.153
+Cpanel Url : https://cpanel.aeonfree.com
+Nameservers : ns1.hstn.me, ns2.hstn.me
+
+MySQL Information
+MySQL Server : View inside Cpanel
+MySQL Port : 3306
+MySQL Username : icei_30090534
+MySQL Password : kelompokd123
+Database : (Create inside Cpanel, It will be something like icei_30090534_XXX)

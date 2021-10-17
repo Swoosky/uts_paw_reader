@@ -12,6 +12,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 </head>
 
+
+
+echo '
+        <form action="../../CRUD/RegisterCRUD/EditUserProcess.php?id='.$data['id'].'" method="post" class="row">
+    '
+
 <body>
     <div class="main-edit-profile">
         <h1 class="text-center mb-3">Edit Profile</h1>
@@ -43,12 +49,6 @@
                     <input class="form-control" type="text" name="last_name" id="last_name" placeholder="Last Name"
                         required />
                 </div>
-                <div class="col-12 p-2">
-                    <!-- Display Name -->
-                    <label class="form-label" for="display_name">Display Name</label>
-                    <input class="form-control" type="text" name="display_name" id="display_name"
-                        placeholder="Display Name" />
-                </div>
 
                 <div class="row">
                     <div class="col-12 mt-1">
@@ -64,16 +64,9 @@
                     <div class="col-2"></div>
                     <div class="col-9 p-2">
                         <!-- Instagram -->
-                        <label class="form-label" for="instagram">Instagram:</label>
-                        <input class="form-control" type="text" name="instagram" id="instagram"
-                            placeholder="@yourinstagram" />
-                    </div>
-                    <div class="col-2"></div>
-                    <div class="col-9 p-2">
-                        <!-- Twitter -->
-                        <label class="form-label" for="twitter">Twitter:</label>
-                        <input class="form-control" type="text" name="twitter" id="twitter"
-                            placeholder="@yourtwitter" />
+                        <label class="form-label" for="phone_number">Phone Number:</label>
+                        <input class="form-control" type="text" name="phone_number" id="phone_number"
+                            placeholder="0879998880" />
                     </div>
                 </div>
 

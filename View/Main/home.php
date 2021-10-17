@@ -33,16 +33,11 @@
                                     </td>
                                     <td class="article article-container">
                                         <h3 class="article article-title">'.$data['title'].'</h3>
+                                        <p class="article article-content">written by '.$data['author'].'</p>
                                         <p class="article article-content">'.$data['body'].'</p>
                                         <div align="right">
-                                            <a href="artikel.php">
-                                                <button type="button" class="read">Read</button>
-                                            </a>
-                                            <a href="../../View/Articles/editArticle.php?id='.$data['id'].'">
-                                                <button type="button" class="Edit">Edit</button>
-                                            </a>
-                                            <a href="../../CRUD/ArticleCRUD/DeleteArticleProcess.php?id='.$data['id'].'">
-                                                <button type="button" class="delete">Delete</button>
+                                            <a href="../Articles/show.php?id='.$data['id'].'">
+                                                <button type="button" class="read" name="read_article">Read</button>
                                             </a>
                                         </div>
                                     </td>

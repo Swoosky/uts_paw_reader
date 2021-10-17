@@ -28,6 +28,8 @@ if (isset($_POST['login'])) {
             //isLogin ini temp variable yang gunanya buat ngecek nanti apakah sdh login ato belum
             $_SESSION['isLogin'] = true;
             $_SESSION['user'] = $user;
+            $_SESSION['user_active'] = $username;
+
             echo
             '<script>
                     alert("Login Success"); window.location = "../View/Main/home.php"

@@ -44,7 +44,10 @@
                         <div></div>
                     </div>
                     <a href="../Main/dashboard.php">
-                        <div class="logout">SIGN OUT<i class="fa fa-sign-out"></i></div>
+                        <div class="logout" >
+                            <a href="/uts_paw_reader/CRUD/logoutProcess.php" style="font-weight:600">
+                            <i class="fa fa-sign-out"></i>Logout</a>
+                        </div>
                     </a>
                 </div>
         <script src="../../hamburger_script.js"></script>
