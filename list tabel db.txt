@@ -1,0 +1,18 @@
+Users {
+    id
+    first_name
+    last_name
+    img_url
+    username
+    password
+    email
+    phone_number
+    gender
+}
+
+Articles {
+    id
+    title
+    img_url
+    body
+}

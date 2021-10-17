@@ -1,0 +1,167 @@
+html * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Dasboard */
+.gambar {
+  height: 753px;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  border-radius: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.teks {
+  margin-bottom: 300px;
+  text-shadow: -2px 3px 2px rgba(0, 0, 0, 1);
+}
+
+/* Hamburger */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia;
+  background-color: whitesmoke;
+}
+
+#app {
+  display: flex;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+#app .sidebar {
+  background-color: #c4c4c4;
+  transition: margin-left 0.5s ease-out;
+  min-width: 250px;
+}
+
+#app .sidebar-hide {
+  margin-left: -250px;
+}
+
+#app .sidebar .header {
+  text-align: center;
+  padding: 32px 8px;
+}
+
+#app .sidebar .header .brand {
+  font-family: "Segoe UI";
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 32px;
+}
+
+#app .sidebar .header .brand span {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+}
+
+#app .sidebar .body {
+  margin-top: 64px;
+}
+
+#app .sidebar .body a {
+  text-decoration: none;
+}
+
+#app .sidebar .body .item {
+  color: #f5f6fa;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 18px 24px;
+  font-size: 14px;
+}
+
+#app .sidebar .body .item:hover {
+  background-color: rgba(23, 44, 102, 0.5);
+}
+
+.active {
+  background-color: rgba(54, 84, 167, 0.5);
+}
+
+.content {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .header .hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 22px;
+}
+
+.content .header .hamburger div {
+  border: 1px solid #a5b1c2;
+  margin-top: 6px;
+}
+
+.content .header .logout {
+  font-family: Arial;
+  color: #95afc0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.content .header .logout i {
+  margin-left: 4px;
+}
+
+.content .body {
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+.content .body .title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Roboto;
+  margin-bottom: 5px;
+}
+
+#input {
+  border-radius: 5px;
+  border-color: #aaaaaa;
+  height: 40px;
+  margin-right: 20px;
+  width: 500px;
+}
+
+.text {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+#btnSubmit {
+  background-color: #e25eb2;
+  border-color: transparent;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: arial;
+  font-weight: bold;
+  height: 40px;
+  width: 15%;
+}
+
+.judul {
+  font-weight: bold;
+  font-size: 20px;
+  color: #495464;
+}

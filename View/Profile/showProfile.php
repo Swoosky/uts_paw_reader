@@ -12,6 +12,17 @@
 
 </head>
 
+
+<?php
+    $id = $_GET['id'];
+    $query = mysqli_query($con, "SELECT * FROM create_article WHERE id = $id") or die(mysqli_error($con));
+    $data = mysqli_fetch_assoc($query);
+
+    echo '
+        <form action="../../CRUD/ArticleCRUD/EditArticleProcess.php?id='.$data['id'].'" method="post" class="row">
+    '
+?>
+
 <body>
     <div class="main-articles">
         <!-- Profile Top isinya foto + nama + jabatan + action buttons -->
@@ -32,7 +43,7 @@
                         </p>
                     </td>
                     <td class="profile-action">
-                        <a href="/" class="profile-action profile-edit-btn">
+                        <a href="./editProfile.php" class="profile-action profile-edit-btn">
                             EDIT
                         </a>
                     </td>

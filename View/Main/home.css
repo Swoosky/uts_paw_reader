@@ -1,0 +1,60 @@
+.main-articles {
+  margin: 5% 10%;
+}
+
+.article {
+  padding: 0% 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.article-container {
+  width: 100%;
+  border: 0px;
+}
+
+.article-img {
+  /* Scale the image so it covers whole area, thus will likely crop */
+  object-fit: cover;
+  /* Center the image within the element */
+  object-position: center;
+  height: 200px;
+  width: 200px;
+}
+
+.article-title {
+  /*  */
+}
+
+.article-content {
+  /*  */
+}
+
+.article-action {
+  vertical-align: bottom;
+  padding: 10px 0;
+  text-align: right;
+}
+
+.read {
+  background-color: #495464;
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+}
+
+.delete {
+  background-color: #ff0800;
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+}
+
+.edit {
+  background-color: #9cb608;
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+}

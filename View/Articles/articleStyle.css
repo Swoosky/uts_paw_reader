@@ -1,0 +1,30 @@
+.form-article-title {
+  border-radius: 10px !important;
+  border-color: black !important;
+  height: 40px !important;
+  width: 500px !important;
+  margin-right: 40px !important;
+}
+
+.form-article-imgUrl {
+  border-radius: 10px !important;
+  border-color: black !important;
+  height: 40px !important;
+  width: 350px !important;
+}
+
+.form-article-body {
+  border-radius: 10px !important;
+  border-color: black !important;
+  height: 150px !important;
+  width: 900px !important;
+}
+
+.form-article-btn-submit {
+  background-color: #495464 !important;
+  color: #ffffff !important;
+  width: 150px;
+  height: 30px !important;
+  padding: 2px !important;
+  border-radius: 5px !important;
+}
