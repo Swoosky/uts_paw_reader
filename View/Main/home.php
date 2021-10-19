@@ -20,6 +20,7 @@
                             echo '<tr> <td colspan="7"> Tidak ada data </td> </tr>';
                         }else{
                             while($data = mysqli_fetch_assoc($query)){
+                                $body_article = $data['body'];
                                 echo'
                                 <br />
                                 <tr>
@@ -34,7 +35,10 @@
                                     <td class="article article-container">
                                         <h3 class="article article-title">'.$data['title'].'</h3>
                                         <p class="article article-content">written by '.$data['author'].'</p>
-                                        <p class="article article-content">'.$data['body'].'</p>
+                                        <p class="article article-content">
+                                            '
+                                                .substr($body_article,0 ,300).'...    
+                                        </p>
                                         <div align="right">
                                             <a href="../Articles/show.php?id='.$data['id'].'">
                                                 <button type="button" class="read" name="read_article">Read</button>

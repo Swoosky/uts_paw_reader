@@ -30,10 +30,18 @@ if (isset($_POST['login'])) {
             $_SESSION['user'] = $user;
             $_SESSION['user_active'] = $username;
 
-            echo
-            '<script>
+            if($user['verified']==1){
+                echo
+                '<script>
                     alert("Login Success"); window.location = "../View/Main/home.php"
-                    </script>';
+                </script>';
+            }else{
+                echo
+                '<script>
+                    alert("Fail to Verified");
+                    window.location = "../View/Login.php"
+                </script>';
+            }
         } else {
             echo
             '<script>

@@ -75,6 +75,11 @@
                         CREATE PROFILE
                     </button>
                 </div>
+
+
+                <div class="col-12 text-center mt-3">
+                    <a href="../Main/dashboard.php">return to dashboard</a>
+                </div>
             </form>
         </div>
     </div>

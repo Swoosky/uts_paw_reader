@@ -13,10 +13,9 @@
 </head>
 
 <?php
-    include('../../db.php');
-    session_start();
+    include '../../Component/sidebar.php';
     $user_active = $_SESSION['user']['username'];
-    $query = mysqli_query($con, "SELECT * FROM users WHERE username = $user_active ") or die(mysqli_error($con));
+    $query = mysqli_query($con, "SELECT * FROM users WHERE username = '$user_active'") or die(mysqli_error($con));
     $data = mysqli_fetch_assoc($query);
 ?>
 
@@ -54,14 +53,13 @@
 
         <br>
         <hr>
-        <br>
         <?php
             echo '
-                <div class="col">
-                    <div class="col-6 text-end pl-5">
+                <div class="row text-center mb-5">
+                    <div class="col-5 text-end">
                         Email: '.$data['email'].'
                     </div>
-                    <div class="col-6 text-start pl-5">
+                    <div class="col-5">
                         Phone: '.$data['phone_number'].'
                     </div>
                 </div>
@@ -73,12 +71,13 @@
             <table class="article">
 
                 <?php
-                $query = mysqli_query($con, "SELECT * FROM create_article where username = $user_active") or die(mysqli_error($con));
+                $query = mysqli_query($con, "SELECT * FROM create_article where author = '$user_active'") or die(mysqli_error($con));
 
                 if (mysqli_num_rows($query) == 0) {
                     echo '<tr> <td> Tidak ada data </td> </tr>';
                 }else{
                     while($data = mysqli_fetch_assoc($query)){
+                        $body_article = $data['body'];
                         echo'
                         <tr>
                             <td rowspan="2">
@@ -89,48 +88,30 @@
                             <td class="article article-container">
                                 <h3 class="article article-title">'.$data['title'].'</h3>
                                 <p class="article article-content">
-                                    '.$data['body'].'    
+                                    '
+                                        .substr($body_article,0 ,300).'...    
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <a href="../../View/Articles/editArticle.php?id='.$data['id'].'">
-                                    <button type="button" class="Edit">Edit</button>
-                                </a>
-                                <a href="../../CRUD/ArticleCRUD/DeleteArticleProcess.php?id='.$data['id'].'">
-                                    <button type="button" class="delete">Delete</button>
-                                </a>
+                                <div class="text-end">
+                                    <a href="../../View/Articles/show.php?id='.$data['id'].'">
+                                        <button type="button" class="btn btn-primary">Read Now</button>
+                                    </a>
+                                    <a href="../../View/Articles/editArticle.php?id='.$data['id'].'">
+                                        <button type="button" class="btn btn-primary">Edit</button>
+                                    </a>
+                                    <a href="../../CRUD/ArticleCRUD/DeleteArticleProcess.php?id='.$data['id'].'">
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                    </a>
+                                </div>
                             </td>
                         </tr>
                         ';
                     }
                 }
             ?>
-
-                <!-- Start of article -->
-                <tr>
-                    <td rowspan="2">
-                        <img class="article article-img"
-                            src="https://animalcorner.org/wp-content/uploads/2020/07/Japanese-Dog-Breeds-Akita.jpg"
-                            alt="">
-                    </td>
-                    <td class="article article-container">
-                        <h3 class="article article-title">Test</h3>
-                        <p class="article article-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Consectetur alias porro quibusdam nulla? Atque alias earum culpa. Quibusdam, animi
-                            veritatis?
-                            Earum, quidem? Incidunt voluptates mollitia, molestias tenetur nisi doloribus delectus!
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="article article-action">edit</p>
-                    </td>
-                </tr>
-                <!-- End of article -->
             </table>
         </div>
     </div>

@@ -22,12 +22,12 @@
                 <div class="col-12 p-2">
                     <!-- Username -->
                     <label class="form-label" for="username">Username*</label>
-                    <input class="form-control" type="text" name="username" id="username" placeholder="username"/>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="username" />
                 </div>
                 <div class="col-12 p-2">
                     <!-- Password -->
                     <label class="form-label" for="password">Password*</label>
-                    <input type="password" class="form-control" id="password" name="password">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="p@55w0rd!">
                 </div>
 
                 <div class="col-12">
@@ -38,6 +38,14 @@
                     <button class="btn btn-primary col-6" type="submit" name="login">
                         LOGIN
                     </button>
+                </div>
+
+                <div class="col-12 text-center mt-3">
+                    <a href="./Profile/createProfile.php">Register Now</a>
+                </div>
+
+                <div class="col-12 text-center mt-5">
+                    <a href="./Main/dashboard.php">return to dashboard</a>
                 </div>
             </form>
         </div>

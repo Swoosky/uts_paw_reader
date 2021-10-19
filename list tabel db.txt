@@ -9,6 +9,8 @@ users {
     phone_number
     gender
     role
+    vk
+    verified
 }
 
 create_article {
