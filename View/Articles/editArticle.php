@@ -16,7 +16,7 @@
 
             <?php
                 $id = $_GET['id'];
-                $query = mysqli_query($con, "SELECT * FROM create_article WHERE id = $id") or die(mysqli_error($con));
+                $query = mysqli_query($con, "SELECT * FROM articles WHERE id = $id") or die(mysqli_error($con));
                 $data = mysqli_fetch_assoc($query);
 
                 echo '

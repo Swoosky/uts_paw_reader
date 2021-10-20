@@ -12,7 +12,7 @@
 
        // Melakukan insert ke databse dengan query dibawah ini
        $query = mysqli_query($con,
-       "INSERT INTO create_article(id, title, img_url, body, author)
+       "INSERT INTO articles(id, title, img_url, body, author)
        VALUES
        (NULL, '$title', '$img_url', '$body', '$author')")
        or die(mysqli_error($con)); // perintah mysql yang gagal dijalankan ditangani oleh perintah “or die”

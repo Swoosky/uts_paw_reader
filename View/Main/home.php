@@ -14,7 +14,7 @@
         <form>
             <table class="article" style="width: 100%">
                 <?php
-                        $query = mysqli_query($con, "SELECT * FROM create_article") or die(mysqli_error($con));
+                        $query = mysqli_query($con, "SELECT * FROM articles") or die(mysqli_error($con));
 
                         if (mysqli_num_rows($query) == 0) {
                             echo '<tr> <td colspan="7"> Tidak ada data </td> </tr>';

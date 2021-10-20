@@ -71,7 +71,7 @@
             <table class="article">
 
                 <?php
-                $query = mysqli_query($con, "SELECT * FROM create_article where author = '$user_active'") or die(mysqli_error($con));
+                $query = mysqli_query($con, "SELECT * FROM articles where author = '$user_active'") or die(mysqli_error($con));
 
                 if (mysqli_num_rows($query) == 0) {
                     echo '<tr> <td> Tidak ada data </td> </tr>';

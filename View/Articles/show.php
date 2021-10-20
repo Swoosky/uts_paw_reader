@@ -9,7 +9,7 @@
         <?php
         if(isset($_GET['id'])){
             $id = $_GET['id'];
-            $query = mysqli_query($con, "SELECT * FROM create_article where id = $id") or die(mysqli_error($con));
+            $query = mysqli_query($con, "SELECT * FROM articles where id = $id") or die(mysqli_error($con));
             $data = mysqli_fetch_assoc($query);
             echo'
             <br />
