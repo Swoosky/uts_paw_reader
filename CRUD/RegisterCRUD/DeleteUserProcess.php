@@ -7,7 +7,7 @@
         if($queryDelete){
             echo
             '<script>
-            alert("User Deleted"); window.location = "../../View/Main/dashboard.php"
+            alert("User Deleted"); window.location = "../../index.php"
             </script>';
         }else{
             echo

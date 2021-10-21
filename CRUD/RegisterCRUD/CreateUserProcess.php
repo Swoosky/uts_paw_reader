@@ -26,9 +26,9 @@ use PHPMailer\PHPMailer\Exception;
 
         // Melakukan insert ke databse dengan query dibawah ini
         $query = mysqli_query($con,
-            "INSERT INTO users(first_name, last_name, img_url, username, password, email, phone_number, gender, vk, job_role)
+            "INSERT INTO users(first_name, last_name, img_url, username, password, email, phone_number, gender, vk, verified, job_role)
                 VALUES
-            ('$first_name', '$last_name', '$img_url', '$username', '$password', '$email', '$phone_number', '$gender', '$vk', '$job_role')")
+            ('$first_name', '$last_name', '$img_url', '$username', '$password', '$email', '$phone_number', '$gender', '$vk', 0, '$job_role')")
                 or die(mysqli_error($con)); // perintah mysql yang gagal dijalankan ditangani oleh perintah “or die”
 
             if($query){
@@ -36,7 +36,7 @@ use PHPMailer\PHPMailer\Exception;
                 $nama_pengirim= 'Irfan';
                 $email_penerima= $_POST['email'];
                 $subjek= 'Registrasi user baru';
-                $pesan= "<a href='http://localhost:8080/uts_paw_reader/CRUD/RegisterCRUD/VerifProcess.php?vk=$vk'>Register Account</a>" ;
+                $pesan= "<a href='http://onlinereaderpaw21.epizy.com/CRUD/RegisterCRUD/VerifProcess.php?vk=$vk'>Register Account</a>" ;
                    
                 $mail=new PHPMailer;
                 $mail->isSMTP();

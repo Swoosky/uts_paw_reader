@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Dashboard</title>
 </head>
 
@@ -24,11 +24,11 @@
             <div style="padding-right: 20px" class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" type="link" style="color: white" href="../Login.php">Login</a>
+                        <a class="nav-link" type="link" style="color: white" href="./View/Login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" type="link" style="color: white"
-                            href="../Profile/createProfile.php">Registrasi</a>
+                            href="./View/Profile/createProfile.php">Registrasi</a>
                     </li>
                 </ul>
             </div>

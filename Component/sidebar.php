@@ -65,7 +65,7 @@
                     </div>
                     <a href="../Main/dashboard.php">
                         <div class="logout" >
-                            <a href="/uts_paw_reader/CRUD/logoutProcess.php" style="font-weight:600">
+                            <a href="../../CRUD/LogoutProcess.php" style="font-weight:600">
                             <i class="fa fa-sign-out"></i>Logout</a>
                         </div>
                     </a>

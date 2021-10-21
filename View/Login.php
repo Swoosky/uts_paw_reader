@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="col-12 text-center mt-5">
-                    <a href="./Main/dashboard.php">return to dashboard</a>
+                    <a href="../index.php">return to dashboard</a>
                 </div>
             </form>
         </div>
